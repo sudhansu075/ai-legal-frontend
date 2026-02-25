@@ -8,7 +8,7 @@ function App() {
     const formData = new FormData();
     formData.append("file", file);
 
-    const response = await fetch("http://127.0.0.1:8000/analyze/", {
+    const response = await fetch("https://ai-legal-analyzer-w3ad.onrender.com/analyze/", {
       method: "POST",
       body: formData,
     });
